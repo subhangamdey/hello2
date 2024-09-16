@@ -3,75 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Application</title>
-    <style>
-        /* Styling for the header div */
-        #head {
-            width: 600px;
-            height: 200px;
-            background-color: red;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        /* Styling for the body div */
-        #body {
-            width: 600px;
-            height: 400px;
-            display: flex;
-        }
-
-        /* Styling for the first span */
-        #span1 {
-            width: 300px;
-            height: 300px;
-            background-color: #00FF00;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        /* Styling for the second span */
-        #span2 {
-            width: 300px;
-            height: 300px;
-            background-color: #0000FF;
-            color: white;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        /* General body styling */
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    </style>
+    <title>Add Book Form</title>
 </head>
 <body>
 
-    <!-- Header div with centered text -->
-    <div id="head">
-        <h1>My Application</h1>
-    </div>
+    <!-- Form header -->
+    <h2>Add Book</h2>
 
-    <!-- Body div with two horizontally aligned spans -->
-    <div id="body">
-        <div id="span1">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </div>
-        <div id="span2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </div>
-    </div>
+    <!-- Add Book form -->
+    <form name="addBook">
+
+        <!-- Book Id input -->
+        <label for="bookId">Book Id:</label>
+        <input type="text" id="bookId" name="bookId"><br><br>
+
+        <!-- Book Name input -->
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" name="bookName"><br><br>
+
+        <!-- Category drop down -->
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="Action">Action</option>
+            <option value="Drama">Drama</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Childrens">Childrens</option>
+        </select><br><br>
+
+        <!-- Availability radio buttons -->
+        <label>Available:</label><br>
+        <input type="radio" id="available" name="availability" value="Available">
+        <label for="available">Available</label><br>
+        <input type="radio" id="notAvailable" name="availability" value="Not Available">
+        <label for="notAvailable">Not Available</label><br><br>
+
+        <!-- Add and Cancel buttons with inline CSS for background color -->
+        <button type="submit" name="add" style="background-color: #2345E4; color: white;">Add</button>
+        <button type="reset" name="cancel" style="background-color: #2345E4; color: white;">Cancel</button>
+
+    </form>
 
 </body>
 </html>
