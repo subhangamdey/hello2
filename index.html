@@ -3,45 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Book Form</title>
+    <title>Customer Listing</title>
+    <style>
+        /* Styling for the table */
+        #custList {
+            width: 80%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 0 auto; /* Align center */
+        }
+
+        /* Table header background color */
+        #custList th {
+            background-color: #42aaf4;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Table data styling */
+        #custList td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Line after heading */
+        hr {
+            width: 100%;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Form header -->
-    <h2>Add Book</h2>
+    <!-- Page header -->
+    <h2 style="text-align: center;">Customer Listing</h2>
 
-    <!-- Add Book form -->
-    <form name="addBook">
+    <!-- Horizontal line -->
+    <hr>
 
-        <!-- Book Id input -->
-        <label for="bookId">Book Id:</label>
-        <input type="text" id="bookId" name="bookId"><br><br>
-
-        <!-- Book Name input -->
-        <label for="bookName">Book Name:</label>
-        <input type="text" id="bookName" name="bookName"><br><br>
-
-        <!-- Category drop down -->
-        <label for="category">Category:</label>
-        <select id="category" name="category">
-            <option value="Action">Action</option>
-            <option value="Drama">Drama</option>
-            <option value="Comedy">Comedy</option>
-            <option value="Childrens">Childrens</option>
-        </select><br><br>
-
-        <!-- Availability radio buttons -->
-        <label>Available:</label><br>
-        <input type="radio" id="available" name="availability" value="Available">
-        <label for="available">Available</label><br>
-        <input type="radio" id="notAvailable" name="availability" value="Not Available">
-        <label for="notAvailable">Not Available</label><br><br>
-
-        <!-- Add and Cancel buttons with inline CSS for background color -->
-        <button type="submit" name="add" style="background-color: #2345E4; color: white;">Add</button>
-        <button type="reset" name="cancel" style="background-color: #2345E4; color: white;">Cancel</button>
-
-    </form>
+    <!-- Customer List table -->
+    <table id="custList">
+        <thead>
+            <tr>
+                <th>Customer Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100001</td>
+                <td>Akshay Kumar</td>
+                <td>Male</td>
+                <td>Chennai</td>
+            </tr>
+            <tr>
+                <td>100002</td>
+                <td>Shyama P</td>
+                <td>Female</td>
+                <td>Trivandrum</td>
+            </tr>
+            <tr>
+                <td>100003</td>
+                <td>Nalini Kumari</td>
+                <td>Female</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>100004</td>
+                <td>Raj Shyam</td>
+                <td>Male</td>
+                <td>Chennai</td>
+            </tr>
+            <tr>
+                <td>100005</td>
+                <td>Sundar G</td>
+                <td>Male</td>
+                <td>Mangalore</td>
+            </tr>
+            <tr>
+                <td>100006</td>
+                <td>Kishore P</td>
+                <td>Male</td>
+                <td>Calicut</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
